@@ -1,0 +1,33 @@
+.calc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .nums {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .operations {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .answer {
+    text-align: center;
+  }

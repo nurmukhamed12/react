@@ -1,0 +1,25 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.relative {
+    width: 83%;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.input{
+    justify-content: center;
+    margin: 5px;
+}
+
+.table {
+    margin-left: 33.5%; 
+}
+
+tr{
+    font-size: larger;
+}
