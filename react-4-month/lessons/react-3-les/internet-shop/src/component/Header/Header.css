@@ -1,29 +1,25 @@
 header{
-    background-color: #252525;
+    background-color: black;
     position: fixed;
     width: 100%;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     padding: 20px 0;
 }
 
-.header-container{
+.hesder-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 header a{
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
-
 header h1{
-    color: #fff;
+    color: white;
 }
-
 header nav{
     display: flex;
     column-gap: 20px;
-    
 }
