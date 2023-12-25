@@ -10,14 +10,14 @@ const Cart = ({ buyFunc, cartData, setCartData }) => {
             cartData[idx].count = cartData[idx].count - 1;
             setCartData([...cartData]);
         } else {
-            setCartData(cartData.filter(item=>{
+            setCartData(cartData.filter(item => {
                 return item.id != obj.id
             }))
         }
-    };
+    }
 
-    const deleteProduct = (obj) =>{
-        setCartData(cartData.filter(item=>{
+    const deleteProduct = (obj) => {
+        setCartData(cartData.filter(item => {
             return item.id != obj.id
         }))
     }
@@ -26,6 +26,20 @@ const Cart = ({ buyFunc, cartData, setCartData }) => {
         <section>
 
             <div className="container">
+
+                <p><b>total:</b>$ {
+                        cartData.reduce((acc, rec) => {
+                            return acc + (rec.price * rec.count)
+                        }, 0).toFixed(2)
+
+                    }
+
+                </p>
+                <button onClick={() => {
+setCartData([])
+                }}>clear cart</button>
+
+
                 {
                     cartData.map((item) => {
                         return <div className="cart-item">
@@ -38,13 +52,14 @@ const Cart = ({ buyFunc, cartData, setCartData }) => {
                             </div>
 
                             <div className="cart-item-col">
-                                <p><button onClick={()=>{
-                                    minusCount(item)
-                                }}>-</button>{item.count}<button onClick={() => {
-                                    buyFunc(item)
-                                }}>+</button></p>
-                                <p><b>price:</b>${item.count * item.price}</p>
-                                <button onClick={()=>{
+                                <p><button
+                                    onClick={() => {
+                                        minusCount(item)
+                                    }}>-</button>{item.count}<button onClick={() => {
+                                        buyFunc(item)
+                                    }}>+</button></p>
+                                <p><b>price:</b>${(item.count * item.price).toFixed(2)}</p>
+                                <button onClick={() => {
                                     deleteProduct(item)
                                 }}>delete product</button>
                             </div>

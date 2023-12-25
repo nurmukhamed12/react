@@ -1,44 +1,53 @@
-.card img{
+.card img {
     width: 100%;
     height: 250px;
     object-fit: cover;
+
 }
-.card img:hover{
+
+.card img:hover {
     object-fit: scale-down;
 }
-.card{
-    border: 2px solid #252525;
+
+.card {
+    border: 2px solid grey;
     margin-bottom: 10px;
     padding: 10px;
+    border-radius: 10px;
 }
-.card p{
+
+.card p {
     margin-top: 5px;
 }
-.card-bottom{
+
+.card-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 5px;
 }
-.card-bottom button{
+
+.card-bottom button {
     background-color: #252525;
     border: 1px solid #252525;
     padding: 5px;
     color: white;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.card-bottom button:hover{
+.card-bottom button:hover {
     background-color: white;
     color: #252525;
     transition: .5s;
 }
-.card-bottom button:active{
-transform: scale(1.12);
-transition: 0s;
+
+.card-bottom button:active {
+    transform: scale(1.12);
+    transition: 0s;
 }
 
-.card a{
-    color: #000;
+.card a {
+    color: black;
     text-decoration: none;
 }
