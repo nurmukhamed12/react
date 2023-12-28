@@ -1,0 +1,20 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.card{
+
+    
+
+
+    &__title{
+        color: red;
+    }
+    &__btn{
+        color: purple;
+        background-color: #fff;
+        border: none;
+
+    }
+}
